@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+   <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+</head>
+<style>
+  
+  *{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+  body{
+    background-color:white;
+  }
+
+  nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: red;
+     padding: 20px, 30px; 
+     width: 100%;
+     height: 50px;
+  }
+
+  .logo{
+   width: 80px;
+   top: 10px;
+   left: 60px;
+   position: relative ;
+  }
+ .href{
+   display: flex;
+   flex-direction: row;
+   gap: 50px;
+   transform: translateX(70px);
+ }
+
+ .href a:hover{
+  color: blue;
+ }
+  .href a{
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+    font-size: small;
+  }
+
+
+.navbtn{
+  padding: 10px,20px;
+  border: 1px solid #f35b5b;
+  background-color: transparent;
+  color: white;
+  margin-right: 30px;
+  height: 20px;
+  width: 60px;
+}
+
+.navbtn:hover{
+  background-color: white;
+  color: black;
+}
+
+.imageleft{
+  width: 90%;
+  height:110%;
+
+  position: relative;
+  left: 100px;
+  bottom:37px;
+  
+}
+
+.hero{
+height: 150%;
+width: 100%;
+background: red;
+border: none;
+padding: 40px;
+display: flex;
+}
+
+.heroright{
+position: relative;
+left: 107px;
+
+
+font-size: large;
+font-weight: bolder;
+color: white;
+}
+.we{
+font-weight: lighter;
+font-size: medium;
+}
+
+.hero-form{
+  display:flex ;
+  justify-content: space-between;
+align-items: center;
+width: 70%;
+height: 38px;
+background: white;
+padding: 15px;
+
+position: relative;
+right: 224px;
+top: 270px;
+}
+
+.hero-form input{
+width: 50%;
+height: 18px;
+padding: 5px;
+background-color: white;
+border: none;
+color: black;
+
+position: relative;
+left: 15px;
+}
+
+.hero-form button{
+  width: 80px;
+  height:30px;
+  padding: 4px;
+  background-color: green;
+  border: none;
+  color: black;
+  
+  position: relative;
+  left: 12px;
+} 
+
+.hero-form button:hover{
+  background-color: blue;
+  color: black;
+}
+
+
+
+.connect{
+display: flex;
+justify-content: center;
+align-items: center;
+font-weight: 700;
+font-size: 2rem;
+
+}
+
+.target{
+  display: flex;
+  justify-content: center;
+font-weight: 700;
+font-size: 2rem;
+align-items: center;
+line-height: 1.3;
+}
+
+.stats-row{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction:row;
+gap: 160px;
+margin-top: 30px;
+}
+.stat{
+text-align: center;
+}
+
+.stat h3{
+margin: 0;
+font-size: 36px;
+}
+
+.stat p{
+  margin-top: 8px;
+  font-size: 13px;
+}
+
+.wide-img{
+  width: 50%;
+   margin-top: 4%;
+  margin-left: 25%;
+}
+
+.care{
+ display: flex;
+justify-content: center;
+align-items: center;
+font-weight: 700;
+font-size: 2rem;
+line-height: 1.3; 
+}
+.easy{
+display: flex;
+justify-content: center;
+align-items: center;
+font-weight: 700;
+font-size: 2rem;
+line-height: 1; 
+}
+.svc-img-wrap{
+flex: 1;
+}
+
+.svc-img{
+  width: 100%;
+  max-width: 400px;
+  display: block;
+}
+
+.svc-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+    max-width: 1100px;
+    margin: 100px auto;
+    padding: 0 20px;
+}
+
+.svc-text{
+    flex: 1;
+}
+
+.svc-text h3{
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+
+.svc-text p{
+    color: #666;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.win{
+  margin-top: 50px;
+}
+
+.svc-row button{
+  height: 30px;
+  width: 70px;
+  padding: 5px;
+  background: green;
+  color: black;
+ cursor: pointer; 
+ border: none;
+}
+.svc-row button:hover{
+  background-color: red;
+  color: white;
+  border: none;
+}
+.about{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 90px;
+  padding: 50px 20px;
+}
+
+.about-image img{
+  width: 350px;
+  display: block;
+}
+
+.about-text{
+  max-width: 400px;
+}
+
+.about-button{
+    height: 30px;
+  width: 70px;
+  padding: 5px;
+  background: green;
+  color: black;
+  cursor: pointer;
+  border: none;
+}
+
+.about-button:hover {
+  
+  background: red;
+  color: white;
+  border: none;
+}
+
+.team-top{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 300px;
+}
+
+.team-top h2{
+  font-size: xx-larger;
+  font-weight: bolder;
+}
+
+.team-top p{
+  font-size: small;
+}
+
+.tcard img{
+  width: 200px;
+}
+
+.team-cards{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  margin-top: 30px;
+}
+
+.see-more-btn{
+     height: 30px;
+ width: 70px;
+ padding: 5px;
+ background: green;
+ color: black;
+ cursor: pointer;
+ border: none;
+ margin-left: 50%;
+ margin-top: 40px;
+ margin-bottom: 20px;
+}
+
+footer{
+    background:#071321;
+    color:white;
+    padding:60px 80px;
+}
+
+.footer-top{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:50px;
+}
+
+.footer-logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.footer-logo img{
+    width:80px;
+}
+
+.footer-logo span{
+    font-size:24px;
+    font-weight:600;
+}
+
+.social-icons{
+    display:flex;
+    gap:12px;
+}
+
+.social-icons a{
+    width:35px;
+    height:35px;
+    border-radius:50%;
+    background:#142234;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    text-decoration:none;
+}
+
+.footer-content{
+    display:flex;
+    justify-content:space-between;
+    gap:40px;
+    flex-wrap:wrap;
+}
+
+.footer-column{
+    display:flex;
+    flex-direction:column;
+}
+
+.footer-column h4{
+    margin-bottom:18px;
+    font-size:15px;
+}
+
+.footer-column a{
+    color:#a7b3c1;
+    text-decoration:none;
+    margin-bottom:10px;
+    font-size:14px;
+}
+
+.footer-column a:hover{
+    color:white;
+}
+</style>
+<body>
+  <!--nav-->
+  <nav>
+    <div>
+    <img class="logo" src="./images/Logo.png" alt="logo">
+    </div>
+
+
+      <span class="href">
+   <a href="#">Home</a>
+    <a href="#">About Us</a>
+    <a href="#">Pages</a>
+    <a href="#">Agent</a>
+    <a href="#">Blog</a>
+    <a href="#">Subscribe</a>
+     </span>
+
+
+    <button class="navbtn">Let's Talk</button>
+  </nav>
+<!--hero section--->
+<section class="hero">
+  <div class="heroleft">
+  <img class="imageleft" src="./images/IMG-20260529-WA0022.jpg" alt="team meeting">
+  </div>
+
+
+ <div class="heroright">
+  <h1 class="empower">Enpowering your business with the best solution</h1>
+ <p class="we">We connect your brand &amp; businesses with your target  market in the most creative
+and absolute way possible through the digital medium.</p>
+ </div>
+
+<div class="hero-form">
+  <input type="email" placeholder="Enter your email address" />
+  <button class="let">Let's Talk</button>
+</div>
+</section>
+
+
+<!--stat-->
+<section>
+  <div class="win">
+<span class="connect">We connect your busines</span>
+<span class="target">with your target </span>
+</div>
+   <div class="stats-row">
+   <div class="stat"><h3>1,093</h3>
+    <p>Finished Project</p></div>
+   <div class="stat"><h3>3,355</h3>
+    <p>Enrolled Project</p></div>
+   <div class="stat"><h3>40</h3>
+    <p>Team Worker</p></div>
+   <div class="stat"><h3>90%</h3>
+    <p>Satisfaction Rate</p></div>
+ </section>
+
+
+ <!-- WIDE TEAM PHOTO -->
+<img class="wide-img"
+  src="./images/IMG-20260529-WA0037.jpg"
+  alt="Team collaborating" />
+
+  <!--services-->
+  <section class="sertvices">
+  <span class="care">We have made you</span>
+  <span class="easy">care easy for you</span>
+
+
+  <!---textleft-imageright-->
+    <div class="svc-row">
+    <div class="svc-text">
+      <h3>Effective Website Design<br/>and Development</h3>
+      <p>By connecting actions all over  the world to the best instructors, Healthcare helping 
+individuals reach their goals and pursue their dreams.</p>
+      <button>Let's Talk</button>
+    </div>
+
+     <div class="svc-img-wrap">
+   <img class="svc-img"
+     src="./images/IMG-20260529-WA0031.jpg"
+     alt="left"/>
+ </div>
+</div>
+
+
+
+  <!--image left, text right -->
+     <div class="about">
+      <div class="about-image">
+     <img
+       src="./images/IMG-20260529-WA0030.jpg"
+       alt="image"/>
+       </div>
+   
+
+   <div class="about-text">
+    <h2>
+      Effective Website Design and
+      Development
+    </h2>
+
+    <p>
+      By connecting patients all over the world to the best instructors
+    </p>
+
+    <button class="about-button">Let's Talk</button>
+   </div>
+   </div>
+  
+ <!-- Row 3: text left, image right 
+-->
+ <div class="svc-row">
+   <div class="svc-text">
+     <h3>People Will Always 
+Judge<br/>the book by it's 
+cover.</h3>
+     <p>By connecting patients all 
+over the world to the best 
+instructors, Healthcare 
+helping 
+ndividuals reach their goals and 
+ursue their transform.</p>
+     <button>Let's Talk</button>
+   </div>
+   <div class="svc-img-wrap">
+     <img class="svc-img"
+       src="./images/IMG-20260529-WA0036.jpg"
+       alt="man" />
+   </div>
+ </div>
+</section>
+
+
+<!--Teams-->
+<section class="team">
+  <div class="team-top">
+    <h2>Meets our great<br/>Creative 
+Teams</h2>
+    <p>Our journey began with a 
+simple idea make a simple <br>
+journey make this world more 
+function. <br> We 
+collaborate <br> with organizations that 
+are keen transform.</p>
+  </div>
+  <div class="team-cards">
+    <div class="tcard">
+      <img  src="./images/IMG-20260529-WA0027.jpg" alt="team"/>
+      <div class="tcard-body">
+        <h4>Amara Amanda</h4>
+        <p>Introduction into 
+procurement <br> 2 hours got to 
+do work <br> got to do work while 
+eating.</p>
+      </div>
+    </div>
+    <div class="tcard">
+      <img src="./images/IMG-20260529-WA0035.jpg" alt="team"/>
+      <div class="tcard-body">
+        <h4>Lucas Podolski</h4>
+        <p>Introduction start 
+procurement <br> 3 hours got to 
+do work <br> got to do work while 
+eating.</p>
+      </div>
+    </div>
+    <div class="tcard">
+      <img src="./images/IMG-20260529-WA0020.jpg" alt=""/>
+      <div class="tcard-body">
+        <h4>Leny Morison Houston</h4>
+        <p>Introduction start 
+procurement  <br> 2 hours got to 
+do work <br> got to do work while 
+eating.</p>
+      </div>
+    </div>
+  </div>
+  <div class="team-see-more">
+    <button 
+class="see-more-btn">See More</button>
+  </div>
+</section>
+<!--footer-->
+<!-- FOOTER -->
+<footer>
+  <div class="footer-top">
+
+    <div class="footer-logo">
+      <img src="./images/Logo.png" alt="logo">
+    </div>
+
+    <div class="social-icons">
+      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a href="#"><i class="fa-brands fa-twitter"></i></a>
+      <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+    </div>
+
+  </div>
+
+  <div class="footer-content">
+
+    <div class="footer-column">
+      <h4>Our Products</h4>
+      <a href="#">The Support Suite</a>
+      <a href="#">The Sales Suite</a>
+      <a href="#">Support</a>
+      <a href="#">Guide</a>
+    </div>
+
+    <div class="footer-column">
+      <h4>Top Features</h4>
+      <a href="#">Ticketing System</a>
+      <a href="#">Knowledge Base</a>
+      <a href="#">Community Forum</a>
+      <a href="#">Help Desk Software</a>
+    </div>
+
+    <div class="footer-column">
+      <h4>Resources</h4>
+      <a href="#">Product Support</a>
+      <a href="#">Request Demo</a>
+      <a href="#">Blog</a>
+      <a href="#">Learning Hub</a>
+    </div>
+
+    <div class="footer-column">
+      <h4>Company</h4>
+      <a href="#">About Us</a>
+      <a href="#">Press</a>
+      <a href="#">Investors</a>
+      <a href="#">Events</a>
+    </div>
+
+    <div class="footer-column">
+      <h4>Favourite Things</h4>
+      <a href="#">For Enterprise</a>
+      <a href="#">For Startups</a>
+      <a href="#">For Ecommerce</a>
+      <a href="#">For SMB Software</a>
+    </div>
+
+  </div>
+</footer>
+</body>
+</body>
+</html>
